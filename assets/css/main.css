@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+
+#header {
+    height: 50px;
+    background: #A1C3D1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#nav .home-btn {
+    margin-right: 5px;
+}
+
+#header h4.logo-name{
+    color: #fff;
+    line-height: 50px;
+    float: right;
+    font-size: 16px;
+    padding: 0 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#header i.logo-icon {
+    line-height: 50px;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+#header .create-info {
+    display: inline-block;
+    float: right;
+    top: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+
+}
+
+#nav > li > a {
+    color: #fff;    
+}
+
+#nav li a {
+    position: relative;
+
+    line-height: 50px;
+    text-decoration: none;
+    padding: 0 30px;
+    display: block;
+}
+
+#nav > li:hover > a {
+    background-color: #F9F9F9;
+    color: #2ba9db;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+#nav > li:active > a {
+    opacity: 0.6;
+    transition: 0.1s;
+    border-bottom: 4px solid #8860D0;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+
+#nav .subnav {
+     display: none;
+     position: absolute;
+     background-color: #C1C8E4;
+     min-width: 200px;    
+     border-radius: 10px;
+     box-shadow: 0 0 10px #a1c7da;
+
+}
+
+#nav .subnav li:hover {
+    box-shadow: 0 0 10px #8860D0;
+    background-color: #8860D0;
+    border-radius: 20px;
+    transition: 0.6s;
+
+}
+
+#nav .subnav li:active {
+    box-shadow: 0 0 10px #54b8c5;
+    transition: 0.1s;
+}
+
+#nav .subnav a {
+    color: #fff;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50%;
+    background: linear-gradient(90deg, rgba(44, 165, 196, 0.3),rgba(194, 56, 56, 0.3)),
+    url('/Product/Project_leap/assets/img/slider/slider.jpg') top center / cover no-repeat;
+}
+
+#slider .slider-content {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    color: #fff;
+}
+
+#slider .slider-header {
+    text-align: center;
+    display: block;
+    margin-left: 42%;
+    margin-right: 42%;
+
+}
+
+#slider .slider-header:hover {
+    background: #A1C3D1;  
+    border-radius: 20px;
+    transition: 0.6s;  
+
+}
+
+#slider .slider-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+#content {
+
+}
+
+#content .about-section {
+    background: #a1c7da;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+    min-height: 800px;
+}
+
+#content .content-heading {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#content .content-sub-heading {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+#content .about-text {
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+#content .about-banner {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 50px;
+    border: 1px solid #8860D0;
+}
+
+#content .banner-computer {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#content .banner-info {
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/*Achiverment*/
+
+#content .achiverment-section {
+    background-color: #c6bcea;
+}
+
+.content-section .achi-img {
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 40px;
+    border: 1px solid #8860D0;
+    display: inline-block;
+}
+
+.content-section .achi-img:hover {
+    border-color: #fff;
+    transition: 0.5s;
+    opacity: 0.6;
+
+}
+
+.content-section .achi-img:active {
+    border: 8px solid #2ba9db;
+    transition: 0.1s;
+}
+
+.content-section .achi-heading {
+    font-size: 45px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.content-section .achi-about {
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 25px;
+    color: #fff;
+}
+#footer {
+
+}
